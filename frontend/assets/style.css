@@ -1,0 +1,105 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-bar {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    z-index: 10;
+    top: 0;
+    
+}
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 100vh;
+    background: #0f1010;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+    z-index: 10;
+}
+
+.sidebar:hover {
+    width: 250px;
+}
+
+.sidebar .wrapper {
+    width: 250px;
+    height: 100%;
+}
+
+.sidebar .logo {
+    padding: 20px 0px;
+    background: #010102;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo span {
+    width: 60px;
+    text-align: center;
+    display: block;
+}
+
+.sidebar .links {
+    padding: 0px 5px;
+}
+
+.sidebar .links .link {
+    margin: 8px 0px;
+    height: 50px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    border-radius: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+.sidebar .links .link i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+
+.sidebar .links .link label {
+    display: inline-block;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.sidebar .divider {
+    border-bottom: 1px solid #222;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.sidebar .links .link:hover {
+    background: #1f252d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar .links .link span {
+    text-decoration: none;
+    color: #888;
+    font-size: 17px;
+}
+
+.sidebar .links .link span a:hover {
+    color: #fff;
+}
+

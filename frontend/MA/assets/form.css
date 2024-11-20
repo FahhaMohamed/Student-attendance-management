@@ -1,0 +1,158 @@
+/* Modal Styles */
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal input[type="text"],
+.modal input[type="number"],
+.modal input[type="email"],
+.modal input[type="password"] {
+    width: 95%;
+    padding: 15px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.modal input[type="text"]:focus,
+.modal input[type="email"]:focus,
+.modal input[type="number"]:focus,
+.modal input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.modal input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.modal input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+#selectPosition,
+#department,
+#semester,
+#selectBatch {
+    outline: none;
+    border: none;
+    padding: 15px;
+    background-color: #f9f9f9; 
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#selectPosition:hover,
+#department:hover,
+#semester:hover,
+#selectBatch:hover {
+    background: #e0e0e0
+}
+
+.select-batch {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}

@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th.header {
+    padding: 12px 15px;
+    text-align: left;
+    background-color: #06005f;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+th.header:first-child {
+    border-top-left-radius: 10px;
+}
+
+th.header:last-child {
+    border-top-right-radius: 10px;
+}
+
+td, th {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    color: #fff;
+}
+
+.approve-btn {
+    background-color: #01b601;
+}
+
+.approve-btn:hover {
+    background-color: #006500;
+}
+
+.reject-btn {
+    background-color: red
+}
+
+.reject-btn:hover {
+    background-color: #810000
+}
+
+.decline-btn {
+    background-color: #6400ff
+}
+
+.decline-btn:hover {
+    background-color: #320081
+}
+
+.add-new-student {
+    background: #dc3545;
+    align-items: center;
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 10px;
+    gap: 7px;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    border: 1px solid #721c24;
+    box-shadow: inset 0 1px 3px #721c24;
+    transition: all 0.3s;
+}
+
+.add-new-student:hover {
+    background: #721c24;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filter-btn {
+    background: #140578;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.filter-btn:hover {
+    background: #092941;
+    cursor: pointer;
+}
+
+.select-cont {
+    position: relative;
+    display: inline;
+}
+
+.select-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.dropdown {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.select-cont::after {
+    content: '\25BC';
+    font-size: 16px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.dropdown:hover {
+    background-color: #e0e0e0;
+}
+
+.dropdown:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.password-field {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.password-field:hover {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#studentList {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+#studentList label {
+    display: block;
+    margin: 5px 0;
+}
+
+#selectAll {
+    margin-top: 20px;
+}
